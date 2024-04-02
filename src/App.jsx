@@ -178,7 +178,7 @@ function App() {
           </Toolbar>
         </AppBar>
       </Box>
-      <Box sx={{ height: 800, width: "100%" }}>
+      <Box sx={{ height: "900px", width: "100%" }}>
         <DataModal
           setOpen={setOpen}
           open={open}
@@ -193,7 +193,10 @@ function App() {
         />
         <DataGrid
           className="promptRegular"
-          style={{ fontFamily: "'Prompt', sans-serif" }}
+          style={{
+            fontFamily: "'Prompt', sans-serif",
+            background: "rgba(235, 235, 235, 0.84)",
+          }}
           rows={reportRepair}
           columns={columns}
           initialState={{
